@@ -1,0 +1,215 @@
+/* Reutilizando o design system criado para a Home */
+:root {
+  --primary: #0a4f8f;
+  --secondary: #00b4d8;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --white: #ffffff;
+  --transition: all 0.3s ease-in-out;
+}
+
+.about-container {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.about-header {
+  text-align: center;
+  padding: 5rem 8% 3rem 8%;
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.badge-about {
+  background-color: rgba(10, 79, 143, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 800;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* SEÇÃO HISTÓRIA */
+.history-section {
+  padding: 5rem 8%;
+}
+
+.history-grid {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.history-text {
+  flex: 1.2;
+}
+
+.history-text h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.history-text p {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.history-visual {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.visual-box {
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(10, 79, 143, 0.15);
+  color: var(--white);
+}
+
+.visual-year {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.visual-icon {
+  font-size: 3.5rem;
+}
+
+/* MISSÃO E VISÃO (PILLARES) */
+.pillars-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 4rem 8%;
+  background-color: var(--light);
+}
+
+.pillar-card {
+  background-color: var(--white);
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.pillar-card p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+/* VALORES */
+.values-section {
+  padding: 6rem 8%;
+}
+
+.values-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.values-title h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.values-title p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+}
+
+.value-item {
+  padding: 1rem;
+  border-left: 3px solid var(--secondary);
+  transition: var(--transition);
+}
+
+.value-item:hover {
+  border-left-color: var(--primary);
+  transform: translateX(5px);
+}
+
+.value-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.value-item h4 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.value-item p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+  .history-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pillars-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-header h1 {
+    font-size: 2.3rem;
+  }
+  .history-visual {
+    margin-top: 1rem;
+  }
+}
