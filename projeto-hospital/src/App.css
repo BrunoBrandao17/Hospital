@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+* {
+  box-sizing: border-box; /* Impede que paddings empurrem a largura do elemento */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Corta qualquer barra de rolagem horizontal indesejada */
+  width: 100%;
+}
