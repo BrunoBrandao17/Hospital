@@ -1,0 +1,153 @@
+/* Container Principal do Footer */
+.huk-footer {
+  background: #0f172a; /* Azul escuro da meia-noite (Acadêmico e Sólido) */
+  color: #f1f5f9;
+  padding: 4rem 2rem 1.5rem 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  border-top: 4px solid #0d9488; /* Detalhe superior em Verde Água */
+  width: 100%;
+}
+
+/* Alinhamento em Grid dos Elementos */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 3rem;
+}
+
+/* Caixa da Marca (Kaua & Bruno) */
+.brand-box .footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.brand-box .footer-logo span {
+  color: #0d9488; /* Destaque na fusão Kaubru */
+}
+
+.brand-box .footer-tagline {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Selo Acadêmico Lúdico */
+.academic-seal {
+  display: inline-block;
+  background: rgba(13, 148, 136, 0.15);
+  border: 1px dashed #0d9488;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #2dd4bf;
+  font-weight: 600;
+}
+
+/* Caixa de Links */
+.links-box h4, .status-box h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito Hover Lúdico nos Links */
+.footer-links a:hover {
+  color: #2dd4bf;
+  transform: translateX(5px);
+}
+
+.footer-links a span {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Badge de Status Animado */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1e293b;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #34d399; /* Verde Saúde */
+  border: 1px solid #10b981;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.status-text {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.6rem;
+}
+
+/* Faixa de Direitos Autorais */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #1e293b;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.footer-bottom strong {
+  color: #94a3b8;
+}
+
+/* Animação lúdica de pulsação para o Badge de Status */
+@keyframes pulseBadge {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.animated-pulse {
+  animation: pulseBadge 3s infinite ease-in-out;
+}
+
+/* Responsividade para telas menores (Celular) */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
