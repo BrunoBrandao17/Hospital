@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/Footer.css';
-
+import "../../../styles/Footer.css"; // Caso a pasta styles esteja totalmente fora de src // Os dois '../' significam: volte duas pastas para trás
 function Footer() {
   return (
     <footer className="main-footer">
