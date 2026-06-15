@@ -1,0 +1,140 @@
+/* Container Principal do Header */
+.huk-header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05); /* Sombra leve usando a cor do footer */
+  border-bottom: 3px solid #0d9488; /* Linha de assinatura em Verde Água */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Garante que o menu fique sempre por cima ao rolar a página */
+  width: 100%;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Limitador de largura interna */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sessão do Logo */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-pulse {
+  font-size: 2.4rem;
+  animation: heartBeat 2s infinite ease-in-out;
+  display: inline-block;
+}
+
+.logo-titles h1 {
+  font-size: 1rem;
+  color: #0f172a; /* Mesmo azul escuro do Footer */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.logo-titles h2 {
+  font-size: 1.5rem;
+  color: #0d9488; /* Verde Água em destaque */
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Sessão de Navegação */
+.navigation-section {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link-item {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link-item:hover {
+  color: #0f172a;
+}
+
+/* Efeito lúdico da barra surgindo embaixo do link */
+.nav-link-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0d9488;
+  transition: width 0.3s ease;
+}
+
+.nav-link-item:hover::after {
+  width: 100%;
+}
+
+.nav-emoji {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Botão de Agendamento Rápido */
+.action-button {
+  text-decoration: none;
+  background: linear-gradient(135deg, #0d9488 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+}
+
+/* Animação do ícone de Hospital */
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .navigation-section {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+}
