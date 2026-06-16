@@ -1,6 +1,4 @@
 import React from 'react';
-import './style.css'; // O Vite vai travar se esse arquivo não existir!
-
 function Blog() {
   const posts = [
     { id: 1, titulo: "A Importância do Check-up Anual", autor: "Dr. Bruno", data: "15 Jun, 2026", resumo: "Entenda quais exames preventivos não podem ficar de fora da sua rotina de saúde este ano." },
