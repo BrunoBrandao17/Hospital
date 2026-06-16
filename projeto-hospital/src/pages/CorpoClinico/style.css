@@ -1,0 +1,198 @@
+/* Variáveis de design unificadas */
+:root {
+  --primary: #0a4f8f;
+  --secondary: #00b4d8;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --white: #ffffff;
+  --transition: all 0.2s ease-in-out;
+}
+
+.corpo-clinico-container {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  padding-bottom: 5rem;
+}
+
+/* CABEÇALHO */
+.clinico-header {
+  text-align: center;
+  padding: 5rem 8% 2.5rem 8%;
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.badge-clinico {
+  background-color: rgba(0, 180, 216, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.clinico-header h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 800;
+}
+
+.clinico-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* FILTROS */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0 8% 3rem 8%;
+}
+
+.filter-btn {
+  background-color: var(--light);
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  background-color: #e2e8f0;
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(10, 79, 143, 0.2);
+}
+
+/* GRID DE CARDS */
+.medicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  padding: 0 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.medico-card {
+  background-color: var(--white);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.medico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  border-color: var(--secondary);
+}
+
+/* AVATAR COM ÍCONE */
+.medico-avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  background-color: var(--light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e2e8f0;
+  transition: var(--transition);
+}
+
+.medico-card:hover .medico-avatar-placeholder {
+  background-color: rgba(0, 180, 216, 0.08);
+  border-color: var(--secondary);
+}
+
+.medico-avatar-icon {
+  font-size: 2.5rem;
+}
+
+/* INFORMAÇÕES DO MÉDICO */
+.medico-info {
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Garante alinhamento igual dos botões */
+}
+
+.medico-info h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.medico-especialidade {
+  display: block;
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.medico-crm {
+  display: block;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* BOTÃO DE AGENDAMENTO */
+.btn-agendar-medico {
+  width: 100%;
+  background-color: var(--light);
+  color: var(--primary);
+  border: 1px solid rgba(10, 79, 143, 0.2);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.medico-card:hover .btn-agendar-medico {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(10, 79, 143, 0.2);
+}
+
+.btn-agendar-medico:hover {
+  background-color: #083c6e !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .clinico-header h1 {
+    font-size: 2.3rem;
+  }
+  .filter-container {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -8,6 +8,7 @@ import Footer from './assets/components/Footer/index.jsx';
 import Home from './pages/Home/index.jsx';
 import QuemSomos from './pages/QuemSomos/index.jsx';
 import Servicos from './pages/Servicos/index.jsx'; // Nova página de Serviços integrada!
+import CorpoClinico from './pages/CorpoClinico/index.jsx';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             
             {/* Rota da Página de Serviços (Dr. Bruno & Dr. Kauá) */}
             <Route path="/servicos" element={<Servicos />} />
+
+            <Route path='/CorpoClinico' element={<CorpoClinico />} />
           </Routes>
         </main>
         
