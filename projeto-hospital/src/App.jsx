@@ -5,7 +5,7 @@ import Header from './assets/components/header/index.jsx';
 import Footer from './assets/components/footer/index.jsx';
 
 // Importação das páginas existentes
-import Home from './pages/Home/index.jsx';
+import Home from './pages/home/index.jsx';
 import QuemSomos from './pages/quemSomos/index.jsx';
 import Servicos from './pages/servicos/index.jsx';
 import CorpoClinico from './pages/corpoClinico/index.jsx';
