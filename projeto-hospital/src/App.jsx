@@ -7,7 +7,7 @@ import Footer from './assets/components/Footer/index.jsx';
 // Importação das páginas existentes
 import Home from './pages/Home/index.jsx';
 import QuemSomos from './pages/QuemSomos/index.jsx';
-import Servicos from './pages/Servicos/index.jsx'; 
+import Servicos from './pages/servicos/index.jsx';
 import CorpoClinico from './pages/CorpoClinico/index.jsx';
 
 // 1. NOVOS IMPORTS (Vamos criar essas pastas no Passo 3)
