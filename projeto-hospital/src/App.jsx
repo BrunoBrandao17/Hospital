@@ -27,7 +27,7 @@ function App() {
             <Route path="/quem-somos" element={<QuemSomos />} />
             
             {/* Rota da Página de Serviços (Dr. Bruno & Dr. Kauá) */}
-            <Route path="/servicos" element={<Servicos />} />
+            <Route path="/Servicos" element={<Servicos />} />
           </Routes>
         </main>
         
