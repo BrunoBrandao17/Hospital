@@ -14,9 +14,9 @@ Para cumprir a **Regra de Ouro do Git**, o desenvolvimento dos componentes e pá
 
 ---
 ## Instalar as dependências obrigatórias ## 
-npm i
-npm i react-router-dom
-npm run dev
+**npm i
+**npm i react-router-dom
+**npm run dev
 
 ## 📂 Estrutura Arquitetural do Projeto (Conforme Exigido)
 
