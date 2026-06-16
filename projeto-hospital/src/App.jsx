@@ -12,8 +12,7 @@ import CorpoClinico from './pages/CorpoClinico/index.jsx';
 
 // 1. NOVOS IMPORTS (Vamos criar essas pastas no Passo 3)
 import Contatos from './pages/Contatos/index.jsx';
-import Blog from './pages/Blog/index.jsx';
-
+import Blog from './pages/Blog/index.jsx'; // Importe o Blog aqu
 function App() {
   return (
     <Router>
