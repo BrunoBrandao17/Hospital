@@ -1,0 +1,81 @@
+/* Container de Contatos */
+.contatos-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho da Página */
+.contatos-container h2 {
+  color: #0f172a;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contatos-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+/* Estrutura do Formulário */
+.contatos-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #f8fafc;
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Campos de Entrada (Inputs e Textarea) */
+.form-input {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  color: #334155;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito de Clique nos Inputs */
+.form-input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+/* Área de Texto Específica */
+.form-textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+/* Botão de Envio */
+.form-button {
+  background: #0d9488;
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.form-button:hover {
+  background: #0f766e; /* Tom de verde um pouco mais escuro ao passar o mouse */
+}
+
+.form-button:active {
+  transform: scale(0.98); /* Efeito de clique físico no botão */
+}
