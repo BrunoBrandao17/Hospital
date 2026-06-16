@@ -1,18 +1,18 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 // Importação dos componentes fixos
-import Header from './assets/components/Header/index.jsx';
-import Footer from './assets/components/Footer/index.jsx';
+import Header from './assets/components/header/index.jsx';
+import Footer from './assets/components/footer/index.jsx';
 
 // Importação das páginas existentes
 import Home from './pages/Home/index.jsx';
-import QuemSomos from './pages/QuemSomos/index.jsx';
+import QuemSomos from './pages/quemSomos/index.jsx';
 import Servicos from './pages/servicos/index.jsx';
-import CorpoClinico from './pages/CorpoClinico/index.jsx';
+import CorpoClinico from './pages/corpoClinico/index.jsx';
 
 // 1. NOVOS IMPORTS (Vamos criar essas pastas no Passo 3)
-import Contatos from './pages/Contatos/index.jsx';
-import Blog from './pages/Blog/index.jsx'; // Importe o Blog aqu
+import Contatos from './pages/contatos/index.jsx';
+import Blog from './pages/blog/index.jsx'; // Importe o Blog aqu
 function App() {
   return (
     <Router>
